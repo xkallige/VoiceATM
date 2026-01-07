@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:gravity="center"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- Glow Ring -->
+
+    <View
+        android:id="@+id/glowRing"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/glow_circle"
+        android:visibility="invisible" />
+
+    <!-- Mic Button -->
+
+    <ImageView
+        android:id="@+id/micButton"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/mic_circle"
+        android:contentDescription="Voice Input"
+        android:padding="40dp"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+</RelativeLayout>
+
